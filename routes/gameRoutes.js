@@ -19,6 +19,7 @@ router.get('/', async (req, res) => {
 
 router.post('/', async (req, res) => {
   try {
+    //analiza los datos q llegan en formato req.body
     console.log("📩 Datos recibidos del frontend:", req.body); // 🔍 Ver qué llega desde React
 
     const newGame = new Game(req.body);
