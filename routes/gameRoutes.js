@@ -33,7 +33,9 @@ router.post('/', async (req, res) => {
   }
 });
 
-// ✅ Eliminar un juego
+// --- 3. ELIMINAR UN JUEGO ---
+// Es la ruta para borrar (DELETE /api/juegos/:id)
+// El ':id' es la ID específica del juego que queremos borrar
 router.delete('/:id', async (req, res) => {
   try {
     await Game.findByIdAndDelete(req.params.id);
