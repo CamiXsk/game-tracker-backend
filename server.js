@@ -3,9 +3,9 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const dotenv = require('dotenv');
 const gameRoutes = require('./routes/gameRoutes');
-const reviewRoutes = require('./routes/reviewRoutes');
+const reviewRoutes = require('./routes/reviewRoutes'); // Para leer las variables de entorno (el .env)
 
-
+// Activo dotenv para que lea el .env
 dotenv.config();
 
 // Crear la instancia de la aplicación
