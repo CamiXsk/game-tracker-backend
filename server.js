@@ -8,14 +8,14 @@ const reviewRoutes = require('./routes/reviewRoutes'); // Para leer las variable
 // Activo dotenv para que lea el .env
 dotenv.config();
 
-// Crear la instancia de la aplicación
+
 const app = express(); 
 
 // --- 2. MIDDLEWARES ---
-// HABILITAR CORS (antes de las rutas)
+// HABILITAR CORS 
 app.use(
   cors({
-    origin: "http://localhost:5173", //  frontend de Vite
+    origin: "http://localhost:5173", // frontend Vite
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type"],
   })
