@@ -6,10 +6,12 @@ const Game = require('../models/gameModel');
 router.get('/', async (req, res) => {
   try {
     const games = await Game.find();
+    //esperar a que encuentre el juego 
     res.json(games);
   } catch (err) {
     console.error("❌ Error al obtener juegos:", err.message);
     res.status(500).json({ message: err.message });
+//decteta algun error y manda mensaje 
   }
 });
 
