@@ -1,5 +1,5 @@
 const express = require('express');
-const router = express.Router();
+const router = express.Router(); // organizar rutas
 const Game = require('../models/gameModel');
 
 // ✅ Obtener todos los juegos
