@@ -15,7 +15,7 @@ const app = express();
 // HABILITAR CORS (antes de las rutas)
 app.use(
   cors({
-    origin: "http://localhost:5173", // Tu frontend de Vite
+    origin: "http://localhost:5173", //  frontend de Vite
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type"],
   })
@@ -37,4 +37,5 @@ mongoose.connect(process.env.MONGO_URI)
 
 // INICIAR SERVIDOR ---
 const PORT = process.env.PORT || 5000;
+//escuchar" peticiones en ese puerto
 app.listen(PORT, () => console.log(`🚀 Servidor corriendo en el puerto ${PORT}`));
