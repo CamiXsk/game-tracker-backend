@@ -15,7 +15,8 @@ router.get('/', async (req, res) => {
   }
 });
 
-// ✅ Crear un nuevo juego
+// --- 2. CREAR UN NUEVO JUEGO ---
+
 router.post('/', async (req, res) => {
   try {
     console.log("📩 Datos recibidos del frontend:", req.body); // 🔍 Ver qué llega desde React
